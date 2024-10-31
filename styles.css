@@ -213,9 +213,10 @@ body, html {
   flex: 1;
   text-align: left;
   font-size: 14px;
+  margin-right: 2px;
 }
 
-.icons {
+.footer-content .icons {
   display: flex;
   gap: 15px; /* Espacio entre íconos */
   margin-left: auto;
