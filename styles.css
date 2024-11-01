@@ -112,18 +112,8 @@ body, html {
   color:#e3e3e3;
 }
 
-#music-section{
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
-  height: auto;
-  padding:4rem 0;           
-  font-family: "Bebas Neue", sans-serif;
-  background-color: black;
-}
-
-#single-section{     
-  background-color: black;
+#music-section{     
+  padding: 3rem 0 3rem 0;
 }
 
 .album {
@@ -168,7 +158,7 @@ body, html {
   justify-content: center;  
   align-items: center;      
   min-height: 700px;
-  padding-top: 2rem;           
+  padding-top: 4rem;           
   font-family: "Bebas Neue", sans-serif;
   background-image: url(assets/tribalvivo.jpg);
   background-size: cover;       
@@ -280,6 +270,10 @@ body, html {
   .large-screen {
       flex: 1 1 25%; /* Ajusta el valor según el número de imágenes */
       max-width: 25%; /* Ajusta el valor según el número de imágenes */
+    }
+
+    #music-section{     
+      padding: 4rem
     }
   
   }
