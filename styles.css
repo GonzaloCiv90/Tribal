@@ -112,8 +112,8 @@ body, html {
   color:#e3e3e3;
 }
 
-#music-section{     
-  padding: 3rem 0 3rem 0;
+#new-section , #music-section{     
+  padding: 4rem 0 2rem 0;
 }
 
 .album {
@@ -130,16 +130,12 @@ body, html {
 
 /* Estilos del nombre del álbum */
 .album-name {
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(17, 94, 15, 0.668);
   color: #e3e3e3;
   text-align: center;
   padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
   font-size: 16px;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -149,25 +145,45 @@ body, html {
   transform: scale(1.1);
 }
 
-.album:hover .album-name {
-  opacity: 1;
-}
-
-#video-section{
+#video-section {
   display: flex;
-  justify-content: center;  
-  align-items: center;      
+  flex-direction: column; /* Cambia la dirección a columna para que el contenido se apile verticalmente */
+  justify-content: center;
+  align-items: center;
   min-height: 700px;
-  padding-top: 4rem;           
+  padding-top: 4rem;
   font-family: "Bebas Neue", sans-serif;
   background-image: url(assets/tribalvivo.jpg);
-  background-size: cover;       
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #e3e3e3;
   background-color: rgba(17, 94, 15, 0.668); /* Cambia el color y la opacidad a tu gusto */
-  background-blend-mode: multiply; 
+  background-blend-mode: multiply;
+  position: relative; /* Para posicionar el enlace de forma absoluta dentro de la sección */
 }
+
+#video-section h2{
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+
+.view-more-link {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  color: #e3e3e3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.view-more-link:hover {
+  transform: scale(1.1);
+  color: #0f9002;
+}
+
 
 .img-cover {
   width: 100%;              
@@ -272,8 +288,37 @@ body, html {
       max-width: 25%; /* Ajusta el valor según el número de imágenes */
     }
 
+    .album-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(17, 94, 15, 0.668);
+      color: #e3e3e3;
+      text-align: center;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-size: 16px;
+      font-family: "Bebas Neue", sans-serif;
+    }
+    
+    /* Efecto al pasar el cursor */
+    .album:hover img {
+      transform: scale(1.1);
+    }
+    
+    .album:hover .album-name {
+      opacity: 1;
+    }
+
     #music-section{     
       padding: 4rem
+    }
+
+    .view-more-link{
+      bottom: 3rem;
+      right: 3rem;
     }
   
   }
