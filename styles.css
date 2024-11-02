@@ -229,7 +229,7 @@ body, html {
 }
 @media (min-width: 770px) {
 
-  .navbar-collapse .icons{
+  .icons{
     margin-left: 1.5rem;
   }
   
