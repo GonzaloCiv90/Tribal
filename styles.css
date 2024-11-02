@@ -93,7 +93,6 @@ body, html {
     font-family: "Bebas Neue", sans-serif;
   }
 #new-section, #newvideo-section{
-  color: #e3e3e3;
   padding-top: 0.3rem; /* Espaciado superior */
   min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
   display: flex; /* Usamos flexbox para alinear elementos */
@@ -115,6 +114,32 @@ body, html {
 #new-section , #music-section{     
   padding: 4rem 0 2rem 0;
 }
+
+/* Estilo inicial para los elementos */
+#new-section h2, #new-section  p, #new-section img {
+  opacity: 0;
+  transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+  transition: opacity 0.6s ease, transform 0.8s ease;
+}
+
+/* Clase para activar el efecto de aparición */
+#new-section h2.show, #new-section  p.show, #new-section img.show {
+  opacity: 1;
+  transform: translateY(0); /* Regresa a la posición original */
+}
+
+#newvideo-section h2, #newvideo-section  p, #newvideo-section img {
+  opacity: 0;
+  transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+  transition: opacity 0.6s ease, transform 0.8s ease;
+}
+
+/* Clase para activar el efecto de aparición */
+#newvideo-section h2.show, #newvideo-section  p.show, #newvideo-section img.show {
+  opacity: 1;
+  transform: translateY(0); /* Regresa a la posición original */
+}
+
 
 .album {
   position: relative;
