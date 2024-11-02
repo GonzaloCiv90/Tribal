@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Selecciona los elementos h2, p, img, y enlaces dentro de .social-icons
-    const elements = document.querySelectorAll("#new-section h2, #new-section p, #new-section img, #new-section .social-icons a, #newvideo-section h2, #newvideo-section  p, #newvideo-section img");
+    const elements = document.querySelectorAll("#new-section h2, #new-section p , #new-section img, #new-section a, #newvideo-section h2, #newvideo-section  p, #newvideo-section a, #newvideo-section img");
   
     // Opciones del IntersectionObserver
     const options = {

@@ -116,26 +116,26 @@ body, html {
 }
 
 /* Estilo inicial para los elementos */
-#new-section h2, #new-section  p, #new-section img {
+#new-section h2, #new-section  p, #new-section img, #new-section a {
   opacity: 0;
   transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
   transition: opacity 0.6s ease, transform 0.8s ease;
 }
 
 /* Clase para activar el efecto de aparición */
-#new-section h2.show, #new-section  p.show, #new-section img.show {
+#new-section h2.show, #new-section  p.show, #new-section img.show, #new-section a.show{
   opacity: 1;
   transform: translateY(0); /* Regresa a la posición original */
 }
 
-#newvideo-section h2, #newvideo-section  p, #newvideo-section img {
+#newvideo-section h2, #newvideo-section  p, #newvideo-section img, #newvideo-section a {
   opacity: 0;
   transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
   transition: opacity 0.6s ease, transform 0.8s ease;
 }
 
 /* Clase para activar el efecto de aparición */
-#newvideo-section h2.show, #newvideo-section  p.show, #newvideo-section img.show {
+#newvideo-section h2.show, #newvideo-section  p.show, #newvideo-section img.show, #newvideo-section a.show {
   opacity: 1;
   transform: translateY(0); /* Regresa a la posición original */
 }
