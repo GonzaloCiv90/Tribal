@@ -15,13 +15,13 @@
                         <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#new-section">New</a>
+                        <a class="nav-link" aria-current="page" href="index.php#new-section">New</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#music-section">Music</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#video-section">Video</a>
+                        <a class="nav-link" aria-current="page" href="index.php#video-section">Video</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="bio.php">Bio</a>
