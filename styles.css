@@ -252,6 +252,44 @@ body, html {
   gap: 15px; /* Espacio entre íconos */
   margin-left: 1.5rem;
 }
+
+/*styles bio*/
+
+/* Estilo para la sección con imagen de fondo */
+.background-section {
+  position: relative;
+  background: url('assets/fotobio.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh; /* Ajusta según lo necesites */
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: rgba(17, 94, 15, 0.668); /* Cambia el color y la opacidad a tu gusto */
+  background-blend-mode: multiply;
+
+}
+
+/* Contenedor del carrusel */
+.carousel-container p{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  background-color:transparent; /* Fondo negro con transparencia */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilo del texto dentro de las diapositivas del carrusel */
+.carousel-item p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
 @media (min-width: 770px) {
 
   .icons{
@@ -345,6 +383,13 @@ body, html {
       bottom: 3rem;
       right: 3rem;
     }
+
+    /*styles bio*/
+
+    /* Estilo para la sección con imagen de fondo */
+   .background-section {
+      background-position: 100% 35%;
+    }
   
-  }
+}
 
