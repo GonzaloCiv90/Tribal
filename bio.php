@@ -49,35 +49,6 @@
             </div>
         </div>
     </section>
-    <!--<div class=" bio_container text-center">
-        <div class=" row">
-            <div class="col-sm pt-4">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <p class=" w-100" alt="...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates quos maxime illo aspernatur natus quis aliquam culpa praesentium tempora quae dignissimos tenetur officia, minima odit maiores neque dolorem magni?</p>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <p class="d-block w-100" alt="...">casa ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates quos maxime illo aspernatur natus quis aliquam culpa praesentium tempora quae dignissimos tenetur officia, minima odit maiores neque dolorem magni?</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="d-block w-100" alt="...">auto ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates quos maxime illo aspernatur natus quis aliquam culpa praesentium tempora quae dignissimos tenetur officia, minima odit maiores neque dolorem magni?</p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="col-sm m-auto">
-                <img src="assets/fotobio.jpg" class="w-100 img-fluid" alt="Nyarlathotep">
-            </div>
-        </div>-->
 
     <?php require("estructuras/music-section.php") ?>
 
