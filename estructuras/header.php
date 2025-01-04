@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/tribal_perfil.jpg" alt="Logo Tribal" width="40" height="auto">
+                    <img src="assets/tribal_perfil.png" alt="Logo Tribal" width="40" height="auto">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
