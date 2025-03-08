@@ -292,6 +292,10 @@ body, html {
   .icons{
     margin-left: 1.5rem;
   }
+
+  .icons a:hover {
+    transform: none;  /* Elimina el efecto de escala */
+  }
   
   .band-small{
       display: none;
@@ -319,7 +323,7 @@ body, html {
     }
     
   .band-member:hover {
-      transform: scale(1.1); /* Ajusta el tamaño según prefieras */
+      transform: none; /* Ajusta el tamaño según prefieras */
     }
     
   .member-info {
