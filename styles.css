@@ -10,8 +10,15 @@ body, html {
   display: none;
   }
 
+.logo{
+  display: none;
+}
+
 .fixed-top{
     background-image: url(assets/tribalportada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
 .navbar-toggler{
@@ -32,25 +39,13 @@ body, html {
 
 .nav-item a {
     text-decoration: none;
-    color: white;
+    color: white !important; /* Forzar color blanco */
     font-family: "Bebas Neue", sans-serif;
-    transition: transform 0.3s ease;
-  }
-
-.nav-item a:hover{
-    transform: scale(1.2);
-    color: #0f9002;
   }
 
 .icons a {
     text-decoration: none;
     color: white;
-    transition: transform 0.3s ease;
-  }
-
-.icons a:hover{
-    transform: scale(1.2);
-    color: #0f9002;
   }
 
 .carousel-inner .carousel-item{
@@ -95,6 +90,9 @@ body, html {
   align-items: center; /* Centra verticalmente */
   font-family: "Bebas Neue", sans-serif;
   background-image: url(assets/fondonew.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #new-section h2, #newvideo-section h2, #music-section h2{
@@ -111,31 +109,25 @@ body, html {
   padding: 4rem 0 2rem 0;
 }
 
-/* Estilo inicial para los elementos */
-#new-section h2, #new-section  p, #new-section img, #new-section a {
+#music-section {
+  padding-top: 4rem;
+  background-image: url(assets/fondonew.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fade-element {
   opacity: 0;
-  transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+  transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.8s ease;
+  will-change: opacity, transform;
 }
 
-/* Clase para activar el efecto de aparición */
-#new-section h2.show, #new-section  p.show, #new-section img.show, #new-section a.show{
+.fade-element.show {
   opacity: 1;
-  transform: translateY(0); /* Regresa a la posición original */
+  transform: translateY(0);
 }
-
-#newvideo-section h2, #newvideo-section  p, #newvideo-section img, #newvideo-section a {
-  opacity: 0;
-  transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
-  transition: opacity 0.6s ease, transform 0.8s ease;
-}
-
-/* Clase para activar el efecto de aparición */
-#newvideo-section h2.show, #newvideo-section  p.show, #newvideo-section img.show, #newvideo-section a.show {
-  opacity: 1;
-  transform: translateY(0); /* Regresa a la posición original */
-}
-
 
 .album {
   position: relative;
@@ -173,6 +165,7 @@ body, html {
   align-items: center;
   min-height: 700px;
   padding-top: 4rem;
+  padding-bottom: 2rem;
   font-family: "Bebas Neue", sans-serif;
   background-image: url(assets/tribalvivo.jpg);
   background-size: cover;
@@ -187,6 +180,32 @@ body, html {
 #video-section h2{
   margin-bottom: 50px;
   font-size: 3rem;
+}
+
+#contacto {
+  padding: 5rem 0;
+  font-family: "Bebas Neue", sans-serif;
+  background-image: url(assets/fondonew.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e3e3e3;
+}
+
+/* Botones */
+.cta-button {
+    display: inline-block;
+    background-color: #0f9002;
+    color: white;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgba(17, 94, 15, 0.668);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .view-more-link {
@@ -252,49 +271,127 @@ body, html {
 /*styles bio*/
 
 /* Estilo para la sección con imagen de fondo */
-.background-section {
-  position: relative;
-  background: url('assets/fotobio.jpg') no-repeat center center;
-  background-size: cover;
-  height: 100vh; /* Ajusta según lo necesites */
+.background-section{
+  height: 100vh; /* Altura completa de la ventana */
+  display: flex;
+  background: url('assets/fondonew.jpg') no-repeat center center;
+  background-size:cover; /* Ajusta según lo necesites */
   color: white;
   font-family: "Bebas Neue", sans-serif;
-  background-color: rgba(17, 94, 15, 0.668); /* Cambia el color y la opacidad a tu gusto */
-  background-blend-mode: multiply;
-
 }
 
-/* Contenedor del carrusel */
-.carousel-container p{
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.container-text {
+  position: static;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.container-text p{
   width: 80%;
   max-width: 800px;
-  background-color:transparent; /* Fondo negro con transparencia */
   padding: 20px;
-  border-radius: 10px;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
-/* Estilo del texto dentro de las diapositivas del carrusel */
-.carousel-item p {
+/* Estilo general para la sección bio */
+.background-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('assets/fondonew.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 3rem 0;
+  position: relative;
+}
+
+/* Contenedor de texto centrado */
+.container-text {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-text p {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px 0;
   font-size: 1.2rem;
-  margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 770px) {
+  .background-section {
+    min-height: unset;
+    padding: 2rem 0 1rem 0;
+    display: block;
+    background-position: center;
+  }
+  .container-text {
+    margin-top: 30px;
+    padding: 15px 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .container-text p {
+    font-size: 1rem;
+    padding: 5px 0;
+    max-width: 100%;
+  }
 }
 
 /* Styles para dispositivos mallor a 770px */
 
 @media (min-width: 770px) {
 
-  .icons{
-    margin-left: 1.5rem;
+  .fixed-top{
+    background-image: url(assets/tribalportada-mobil.jpg);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
   }
 
-  .icons a:hover {
-    transform: none;  /* Elimina el efecto de escala */
+  .logo{
+    display: inline-block;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    transition: transform 0.3s ease;
+  }
+
+.nav-item a:hover{
+    transform: scale(1.2);
+    color: #0f9002;
+  }
+
+.icons a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+.icons a:hover{
+    transform: scale(1.2);
+    color: #0f9002;
   }
   
   .band-small{
@@ -385,12 +482,12 @@ body, html {
       right: 3rem;
     }
 
-    /*styles bio*/
-
     /* Estilo para la sección con imagen de fondo */
    .background-section {
       background-position: 100% 35%;
     }
   
 }
+
+
 

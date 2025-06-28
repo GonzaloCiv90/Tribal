@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Selecciona los elementos h2, p, img, y enlaces dentro de .social-icons
-    const elements = document.querySelectorAll("#new-section h2, #new-section p , #new-section img, #new-section a, #newvideo-section h2, #newvideo-section  p, #newvideo-section a, #newvideo-section img");
+    // Selecciona los elementos para la animación
+    const elements = document.querySelectorAll("#carousel h1, #carousel h2, .overlay h1, .overlay h2, #new-section h2, #new-section p, #new-section img, #new-section a, #newvideo-section h2, #newvideo-section p, #newvideo-section a, #newvideo-section img, #container-text p");
   
     // Opciones del IntersectionObserver
     const options = {
@@ -22,5 +22,23 @@ document.addEventListener("DOMContentLoaded", function () {
       element.classList.add("fade-element");
       observer.observe(element);
     });
-  });
-  
+
+    // Efectos adicionales
+    const links = document.querySelectorAll('.link-item');
+    
+    links.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.boxShadow = '0 0 15px rgba(18, 126, 70, 0.8)';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            this.style.boxShadow = 'none';
+        });
+    });
+    
+    // Asegurar que el video esté en bucle
+    const video = document.getElementById('metalVideo');
+    if(video) {
+        video.loop = true;
+    }
+});

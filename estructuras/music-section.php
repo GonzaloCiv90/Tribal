@@ -1,7 +1,7 @@
-<section id="music-section">
-    <div class="row">
+<section id="music-section" class="py-5 bg-dark text-white">
+    <div class="row py-5">
         <div class="col-6 col-md-4 col-lg-3 album">
-            <a href="https://www.youtube.com/watch?v=ZES9LDUUrAA&t=15s" target="_blank"><img src="assets/tribal_album.jpg" class="img-fluid" alt="Último Viaje"></a>
+            <a href="https://www.youtube.com/watch?v=ZES9LDUUrAA&t=15s" target="_blank"><img src="assets/tribal_album.jpg" class="img-fluid" alt="Tribal LP"></a>
             <div class="album-name">Tribal (LP - 2019)</div>
         </div>
         <div class="col-6 col-md-4 col-lg-3 album">
@@ -23,6 +23,10 @@
         <div class="col-6 col-md-4 col-lg-3 album">
             <a href="https://youtu.be/12mlGGk-Luo?si=i8rCSrMHAPSAM7aJ" target="_blank"><img src="assets/Tribaliluminados.jpg" class="img-fluid" alt="Iluminados"></a>
             <div class="album-name">Iluminados</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 album">
+            <a href="https://www.youtube.com/watch?v=8N6Lo7K0Odg" target="_blank"><img src="assets/Nyarlathotep.jpg" class="img-fluid" alt="Nyarlathotep"></a>
+            <div class="album-name">Nyarlathotep</div>
         </div>
         <!-- Agrega más álbumes según sea necesario -->
     </div>
